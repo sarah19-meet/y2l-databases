@@ -8,4 +8,14 @@ Base = declarative_base()
 # Write your classes here :
 class Product(Base):
     # TODO: complete this class
-    pass
+
+   __tablename__ = 'products'
+   id = Column(Integer, primary_key=True)
+   name = Column(String)
+   size = Column(Integer)
+   color=Column(String)
+   price=Column(Integer)
+   
+
+
+    # pass
